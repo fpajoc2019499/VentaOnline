@@ -1,0 +1,664 @@
+{
+	"info": {
+		"_postman_id": "b4b090ca-2f46-4c57-b907-d184212e9b37",
+		"name": "dbVenta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "agregarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "fredy",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "fpajoc",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Administrador",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Administrador",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRkOTczM2QwZjdkODQxYTA1N2Y3N2YiLCJub21icmUiOiJBZHJpYW4iLCJ1c2VybmFtZSI6ImFwaXJpciIsInJvbCI6IlJPTF9DTElFTlRFIiwiaWF0IjoxNjE1Njk3NzUyLCJleHAiOjE2MTYwNDMzNTJ9.R5LzvsMGfwFYBpfqZ7HkX7rYc9CQfgY8ajSZ_w3R9a0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "dani",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "dcanel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarUsuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRkOTczM2QwZjdkODQxYTA1N2Y3N2YiLCJub21icmUiOiJBZHJpYW4iLCJ1c2VybmFtZSI6ImFwaXJpciIsInJvbCI6IlJPTF9DTElFTlRFIiwiaWF0IjoxNjE1Njk3NzUyLCJleHAiOjE2MTYwNDMzNTJ9.R5LzvsMGfwFYBpfqZ7HkX7rYc9CQfgY8ajSZ_w3R9a0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idUsuario",
+							"value": "604d9733d0f7d841a057f77f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarCategoria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMzE0NzVmNjQ4YTFiMTg4YjVjZDEiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1Njk4MzA0LCJleHAiOjE2MTYwNDM5MDR9.HAexX-6Dj7fFT_bywLhVZL37OV2ev611iwi6LV_zixA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Ropa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarCategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarCategoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarCategoria",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMzE0NzVmNjQ4YTFiMTg4YjVjZDEiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1Njk4MzA0LCJleHAiOjE2MTYwNDM5MDR9.HAexX-6Dj7fFT_bywLhVZL37OV2ev611iwi6LV_zixA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Herramientas",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604d99bfd0f7d841a057f787"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarCategoria",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMzE0NzVmNjQ4YTFiMTg4YjVjZDEiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1Njk4MzA0LCJleHAiOjE2MTYwNDM5MDR9.HAexX-6Dj7fFT_bywLhVZL37OV2ev611iwi6LV_zixA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604d99bfd0f7d841a057f787"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerCategorias",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerCategorias",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerCategorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarProducto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMzE0NzVmNjQ4YTFiMTg4YjVjZDEiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjkyMTY1LCJleHAiOjE2MTYwMzc3NjV9.S8Pp2MS7CZsvvc1zr1QWBo-_j4M9n4Fboy75WQVka9M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mesa",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "idCategoria",
+							"value": "604d99add0f7d841a057f786",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarProducto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarProducto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMzE0NzVmNjQ4YTFiMTg4YjVjZDEiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjkyMTY1LCJleHAiOjE2MTYwMzc3NjV9.S8Pp2MS7CZsvvc1zr1QWBo-_j4M9n4Fboy75WQVka9M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Comedor",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "idCategoria",
+							"value": "604d99add0f7d841a057f786",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604d9c18d0f7d841a057f78f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarProducto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMzE0NzVmNjQ4YTFiMTg4YjVjZDEiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjkyMTY1LCJleHAiOjE2MTYwMzc3NjV9.S8Pp2MS7CZsvvc1zr1QWBo-_j4M9n4Fboy75WQVka9M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604d9c18d0f7d841a057f78f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerProductos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProductosCategoria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerProductosCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerProductosCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604d99a6d0f7d841a057f785"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerPorNombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Nike",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerPorNombre",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerPorNombre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerAgotados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerAgotados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerAgotados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearFactura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idUsuario",
+							"value": "604d9719d0f7d841a057f77e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/CrearFactura",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"CrearFactura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelarFactura",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idFactura",
+							"value": "604d9d64d0f7d841a057f790",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/CancelarFactura",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"CancelarFactura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FinalizarFactura",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idFactura",
+							"value": "604d90dc595e7f33ec7cacad",
+							"type": "text"
+						},
+						{
+							"key": "final",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/FinalizarFactura",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"FinalizarFactura"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
